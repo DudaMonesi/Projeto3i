@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../assets//BIBLIOTECAUM.avif);
+}
+div { 
+    padding: 15px;
+    background-color: rgb(194, 86, 15);
+    h1 {
+        color: white;
+        border: solid 2px rgb(116, 58, 4);
+    }
+}
