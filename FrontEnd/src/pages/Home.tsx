@@ -1,11 +1,8 @@
 import "./Home.css"
 
-export default function Home() {
+ function Home() {
         return (
-         <>
-         <div>
-            ARCANUM
-         </div>
-         </> 
+            <></>
         )
-    }
+}
+export default Home;
