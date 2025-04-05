@@ -2,26 +2,36 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import {Link} from 'react-router-dom';
 
 function Header() {
   return (
     <Navbar expand="lg" style={{ backgroundColor: "rgb(255, 102, 0)" }} >
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand  style={{ fontSize: "30px" }}
+        href="#home">Arcanum
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+            <Nav.Link as={Link} style={{fontSize: "20px" }}
+             to="/home">Home
+             </Nav.Link>
+             <Nav.Link as={Link} style={{fontSize: "20px" }}
+             to="/link">Cortes
+             </Nav.Link> 
+             <Nav.Link as={Link} style={{fontSize: "20px" }}
+             to="/login">Login
+             </Nav.Link>
+            <NavDropdown title="Serviços" id="basic-nav-dropdown" style={{fontSize: "20px" }}>
+              <NavDropdown.Item href="#action/3.1">Barba</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Another action
+                Sombrancelha
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Combos</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Separated link
+                Agendamento
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

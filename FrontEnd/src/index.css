@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import 'bootstrap/dist/css/bootstrap.min.css';
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 Body {
   color: white;
   background-color: black;
-  font-family: "Playfair Display", serif;
+  font-family:  Bebas Neue, sans-serif !important;
+  
 }
 
