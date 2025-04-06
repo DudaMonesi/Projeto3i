@@ -8,14 +8,17 @@ type CadastroFormInputs = {
   email: string;
   cpf: string;
   senha: string;
+  confirmarSenha: string;
 };
 
 const Cadastro: React.FC = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm<CadastroFormInputs>();
+  const { register, handleSubmit, watch, formState: { errors } } = useForm<CadastroFormInputs>();
 
   const onSubmit: SubmitHandler<CadastroFormInputs> = (data) => {
     alert(`Nome: ${data.nome}\nEmail: ${data.email}\nCPF: ${data.cpf}\nSenha: ${data.senha}`);
   };
+
+  const senha = watch('senha');
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
@@ -61,11 +64,31 @@ const Cadastro: React.FC = () => {
             id="senha"
             {...register('senha', { 
               required: 'A senha é obrigatória', 
-              minLength: { value: 8, message: 'A senha deve ter no mínimo 8 caracteres' } 
+              minLength: { value: 8, message: 'A senha deve ter no mínimo 8 caracteres' },
+              validate: value => {
+                if (!/[A-Z]/.test(value)) return 'A senha deve conter pelo menos uma letra maiúscula';
+                if (!/[a-z]/.test(value)) return 'A senha deve conter pelo menos uma letra minúscula';
+                if (!/[0-9]/.test(value)) return 'A senha deve conter pelo menos um número';
+                if (!/[!@#$%^&*(),.?":{}|<>]/.test(value)) return 'A senha deve conter pelo menos um caractere especial';
+                return true;
+              }
             })}
             style={{ width: '100%', padding: '0.5rem', marginTop: '0.5rem' }}
           />
           {errors.senha && <p style={{ color: 'red', fontSize: '0.8rem' }}>{errors.senha.message}</p>}
+        </div>
+        <div style={{ marginBottom: '1rem' }}>
+          <label htmlFor="confirmarSenha">Confirmar Senha:</label>
+          <input
+            type="password"
+            id="confirmarSenha"
+            {...register('confirmarSenha', { 
+              required: 'A confirmação de senha é obrigatória',
+              validate: value => value === senha || 'As senhas não correspondem'
+            })}
+            style={{ width: '100%', padding: '0.5rem', marginTop: '0.5rem' }}
+          />
+          {errors.confirmarSenha && <p style={{ color: 'red', fontSize: '0.8rem' }}>{errors.confirmarSenha.message}</p>}
         </div>
         <button type="submit" style={{ padding: '0.5rem 1rem' }}>Cadastrar</button>
 
