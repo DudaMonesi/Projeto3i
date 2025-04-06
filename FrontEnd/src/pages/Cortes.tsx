@@ -1,4 +1,8 @@
-import React, { useState } from 'react';
+import "./Cortes.css";
+
+// import card cortes
+import CardCortes from "../componentes/CardCortes";
+
 import nomeimagem from "../assets/hight fade.jpg";
 import nomeimagem2 from "../assets/low fade.jpg";
 import nomeimagem3 from "../assets/medium fade.jpg";
@@ -10,32 +14,45 @@ import nomeimagem8 from "../assets/buzz cut.webp";
 
 
 
-
-const Cortes: React.FC = () => {
-    const [selectedImage, setSelectedImage] = useState<File | null>(null);
-
-    const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        if (event.target.files && event.target.files[0]) {
-            setSelectedImage(event.target.files[0]);
-        }
-    };
-
+function Cortes() {
     return (
-        <div style={{ padding: '20px' }}>
-            <h1>Upload e Visualização de Imagem</h1>
-            <input type="file" accept="image/*" onChange={handleImageChange} />
-            {selectedImage && (
-                <div style={{ marginTop: '20px' }}>
-                    <h3>Pré-visualização:</h3>
-                    <img
-                        src={nomeimagem}
-                        alt="Preview"
-                        style={{ maxWidth: '100%', height: 'auto', border: '1px solid #ccc' }}
-                    />
-                </div>
-            )}
-        </div>
+        <main>
+            <section className="sectionFlex">
+                <CardCortes 
+                    image={nomeimagem}
+                    title="High Fade"
+                />
+                <CardCortes 
+                    image={nomeimagem2}
+                    title="High Fade"
+                />
+                <CardCortes 
+                    image={nomeimagem3}
+                    title="High Fade"
+                />
+                <CardCortes 
+                    image={nomeimagem4}
+                    title="High Fade"
+                />
+                <CardCortes 
+                    image={nomeimagem5}
+                    title="High Fade"
+                />
+                <CardCortes 
+                    image={nomeimagem6}
+                    title="High Fade"
+                />
+                <CardCortes 
+                    image={nomeimagem7}
+                    title="High Fade"
+                />
+                <CardCortes 
+                    image={nomeimagem8}
+                    title="High Fade"
+                />
+            </section>
+        </main>
     );
 };
 
-export default Cortes;
+export default Cortes;  

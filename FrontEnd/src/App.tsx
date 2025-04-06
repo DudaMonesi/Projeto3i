@@ -1,8 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Header from "./componentes/Header";
-import Login from "./pages/Login";
 
+
+import Header from "./componentes/Header";
+import Home from "./pages/Home";
+
+
+import Login from "./pages/Login";
+import Cortes from "./pages/Cortes";
+
+
+// rotas de navegação do site 
 export default function App() {
   return (
     <BrowserRouter>
@@ -11,6 +18,7 @@ export default function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/home" element={<Home/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/cortes" element={<Cortes/>} />
       </Routes>
     </BrowserRouter>
   );

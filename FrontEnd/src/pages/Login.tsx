@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
+import { Link } from 'react-router-dom';
 
 type LoginFormInputs = {
   email: string;
@@ -42,6 +43,12 @@ const Login: React.FC = () => {
           {errors.password && <p style={{ color: 'red', fontSize: '0.8rem' }}>{errors.password.message}</p>}
         </div>
         <button type="submit" style={{ padding: '0.5rem 1rem' }}>Entrar</button>
+
+        <div style={{paddingTop: '20px'}}>
+            <Link to={'/cadastro'} style={{textDecoration:'none', color: 'black'}}>
+            Cadastre-se
+            </Link>
+        </div>
       </form>
     </div>
   );
