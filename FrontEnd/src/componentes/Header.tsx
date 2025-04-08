@@ -18,7 +18,7 @@ function Header() {
              to="/home">Home
              </Nav.Link>
              <Nav.Link as={Link} style={{fontSize: "20px" }}
-             to="/link">Cortes
+             to="/Cortes">Cortes
              </Nav.Link> 
              <Nav.Link as={Link} style={{fontSize: "20px" }}
              to="/login">Login
