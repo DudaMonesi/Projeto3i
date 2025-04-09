@@ -21,42 +21,42 @@ function Cortes() {
                 <CardCortes 
                     image={nomeimagem}
                     title="High Fade"
-                    valor="R$ 50,00"
+                    valor="R$ 40,00"
                 />
                 <CardCortes 
                     image={nomeimagem2}
                     title="Low Fade"
-                    valor="R$ 50,00"
+                    valor="R$ 40,00"
                 />
                 <CardCortes 
                     image={nomeimagem3}
                     title="Medium Fade"
-                    valor="R$ 50,00"
+                    valor="R$ 40,00"
                 />
                 <CardCortes 
                     image={nomeimagem4}
                     title="Moicano"
-                    valor="R$ 50,00"
+                    valor="R$ 40,00"
                 />
                 <CardCortes 
                     image={nomeimagem5}
                     title="Mullet"
-                    valor="R$ 50,00"
+                    valor="R$ 40,00"
                 />
                 <CardCortes 
                     image={nomeimagem6}
                     title="Undercut"
-                    valor="R$ 50,00"
+                    valor="R$ 40,00"
                 />
                 <CardCortes 
                     image={nomeimagem7}
                     title="Social"
-                    valor="R$ 50,00"
+                    valor="R$ 40,00"
                 />
                 <CardCortes 
                     image={nomeimagem8}
                     title="Buzz Cut"
-                    valor="R$ 50,00"
+                    valor="R$ 40,00"
                 />
             </section>
         </main>
