@@ -21,37 +21,37 @@ function Cortes() {
                 <CardCortes 
                     image={nomeimagem9}
                     title="Italiana"
-                    valor="R$ 50,00"
+                    valor="R$ 35,00"
                 />
                 <CardCortes 
                     image={nomeimagem10}
                     title="Alinhamento"
-                    valor="R$ 50,00"
+                    valor="R$ 30,00"
                 />
                 <CardCortes 
                     image={nomeimagem11}
                     title="Bigopde"
-                    valor="R$ 50,00"
+                    valor="R$ 35,00"
                 />
                 <CardCortes 
                     image={nomeimagem12}
                     title="Cavanhaque com Bigode"
-                    valor="R$ 50,00"
+                    valor="R$ 40,00"
                 />
                 <CardCortes 
                     image={nomeimagem13}
                     title="Lenhador"
-                    valor="R$ 50,00"
+                    valor="R$ 40,00"
                 />
                 <CardCortes 
                     image={nomeimagem14}
                     title="Navalha"
-                    valor="R$ 50,00"
+                    valor="R$ 35,00"
                 />
                 <CardCortes 
                     image={nomeimagem15}
                     title="Cavanhaque"
-                    valor="R$ 50,00"
+                    valor="R$ 35,00"
                 />
                 <CardCortes 
                     image={nomeimagem16}
