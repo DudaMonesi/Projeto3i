@@ -24,13 +24,10 @@ function Header() {
              to="/login">Login
              </Nav.Link>
             <NavDropdown title="Serviços" id="basic-nav-dropdown" style={{fontSize: "20px" }}>
-              <NavDropdown.Item href="#action/3.1">Barba</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Sombrancelha
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Combos</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={"/Barba"}>Barba</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={"/"}>Combos</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item as={Link} to="/">
                 Agendamento
               </NavDropdown.Item>
             </NavDropdown>

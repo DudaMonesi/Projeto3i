@@ -3,14 +3,14 @@ import "./Cortes.css";
 // import card cortes
 import CardCortes from "../componentes/CardCortes";
 
-import nomeimagem from "../assets/hight fade.jpg";
-import nomeimagem2 from "../assets/low fade.jpg";
-import nomeimagem3 from "../assets/medium fade certo.png";
-import nomeimagem4 from "../assets/moicano.jpeg";
-import nomeimagem5 from "../assets/mullet.webp";
-import nomeimagem6 from "../assets/undercutmaior.png";
-import nomeimagem7 from "../assets/corte social.jpeg";
-import nomeimagem8 from "../assets/buzz cut.webp";
+import nomeimagem from "../assets/cortes/hight fade.jpg";
+import nomeimagem2 from "../assets/cortes/low fade.jpg";
+import nomeimagem3 from "../assets/cortes/medium fade certo.png";
+import nomeimagem4 from "../assets/cortes/moicano.jpeg";
+import nomeimagem5 from "../assets/cortes/mullet.webp";
+import nomeimagem6 from "../assets/cortes/undercutmaior.png";
+import nomeimagem7 from "../assets/cortes/corte social.jpeg";
+import nomeimagem8 from "../assets/cortes/buzz cut.webp";
 
 
 
